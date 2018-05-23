@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Isntalador do Portainer via script shell
+#
+# este é um teste de comportamento do sistema
+#
+docker run -d --name portainer \
+  -p 9000:9000 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  portainer/portainer
