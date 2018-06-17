@@ -1,0 +1,18 @@
+package main 
+
+import  "fmt"
+
+func medTemperatura(t float64) string {
+    if t >= 36.6 && t <= 37.5 {
+        return "Estado febriu, aguardar uma hora e medir novamente"
+   } else if t >= 37.6 && t <= 38.4 {
+        return "Febre moderada, dar dipirona pra ela e aguardar duas horas para medir novamente"
+    } else if t >= 38.5 && t <= 39.9 {
+        return "Ir para hospital, avisar Anderson"
+    } else {
+        return " Valor invalido erro de sistema"
+    }
+}
+func main() {
+    fmt.Println(medTemperatura(37.3))
+}
